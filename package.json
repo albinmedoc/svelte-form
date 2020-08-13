@@ -24,5 +24,12 @@
   "dependencies": {},
   "author": "Albin Médoc",
   "license": "ISC",
-  "description": "*Psst — looking for an app template? Go here --> [sveltejs/template](https://github.com/sveltejs/template)*"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albinmedoc/svelte-responsive-form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/albinmedoc/svelte-responsive-form/issues"
+  },
+  "homepage": "https://github.com/albinmedoc/svelte-responsive-form#readme"
 }
