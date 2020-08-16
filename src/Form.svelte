@@ -1,6 +1,15 @@
 <script>
-    export let method = 'GET';
+    import { createEventDispatcher } from 'svelte';
+    const dispatch = createEventDispatcher();
+    
+    export let method = undefined;
     export let action = undefined;
+
+    function handleSubmit(e){
+        if(!method || !action) e.preventDefault();
+
+        dispatch('submit');
+    }
 </script>
 
 <style>
@@ -21,6 +30,6 @@
     }
 </style>
 
-<form {method} {action}>
+<form {method} {action} on:submit={handleSubmit}>
     <slot />
 </form>
