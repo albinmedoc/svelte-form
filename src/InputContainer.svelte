@@ -13,9 +13,9 @@
         /*  50% minus margin 20px on both sides */
     }
     /* Inputs */
-    :global(input),
-    :global(textarea),
-    :global(button) {
+    div :global(input),
+    div :global(textarea),
+    div :global(button) {
         height: 40px;
         width: 100%;
         border: 1px solid #efefef;
@@ -26,21 +26,21 @@
         overflow: hidden;
         font-size: var(--responsive-form-font-size);
     }
-    :global(input),
-    :global(textarea),
-    :global(label) {
+    div :global(input),
+    div :global(textarea),
+    div :global(label) {
         padding: 0 10px;
     }
-    :global(textarea) {
+    div :global(textarea) {
         min-height: 100px;
         resize: none;
     }
 
     /* Buttons */
-    :global(input[type='submit']),
-    :global(input[type='button']),
-    :global(input[type='reset']),
-    :global(button) {
+    div :global(input[type='submit']),
+    div :global(input[type='button']),
+    div :global(input[type='reset']),
+    div :global(button) {
         padding: 0 20px;
         min-width: 60%;
         text-decoration: none;
@@ -57,17 +57,17 @@
         transition: opacity 0.2s ease, transform 0.2s ease, font-size 0.2s ease;
         opacity: 0.5;
     }
-    :global(input:required + label:after),
-    :global(input.required + label:after),
-    :global(textarea:required + label:after),
-    :global(textarea.required + label:after) {
+    div :global(input:required + label:after),
+    div :global(input.required + label:after),
+    div :global(textarea:required + label:after),
+    div :global(textarea.required + label:after) {
         content: ' *';
         color: red;
     }
-    :global(input:focus:not([type='checkbox']) + label),
-    :global(input:not(:placeholder-shown):not([type='checkbox']) + label),
-    :global(textarea:focus + label),
-    :global(textarea:not(:placeholder-shown) + label) {
+    div :global(input:focus:not([type='checkbox']) + label),
+    div :global(input:not(:placeholder-shown):not([type='checkbox']) + label),
+    div :global(textarea:focus + label),
+    div :global(textarea:not(:placeholder-shown) + label) {
         opacity: 1;
         font-size: 15px;
         transform: translateY(-30px) translateX(-10px);
