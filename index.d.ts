@@ -1,8 +1,8 @@
 import type { SvelteComponent } from "svelte";
 
 export interface FormProps {
-    method: string;
-    action: string;
+    method?: string;
+    action?: string;
 }
 
 declare class Form extends SvelteComponent {
@@ -12,7 +12,7 @@ declare class Form extends SvelteComponent {
 declare class FormRow extends SvelteComponent { }
 
 export interface InputContainerProps {
-    label: string;
+    label?: string;
 }
 
 declare class InputContainer extends SvelteComponent {
