@@ -19,4 +19,6 @@ declare class InputContainer extends SvelteComponent {
     $$prop_def: InputContainerProps;
 }
 
-export { Form, FormRow, InputContainer }
+declare function autoresize(node:Node): void;
+
+export { Form, FormRow, InputContainer, autoresize }
