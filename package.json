@@ -1,5 +1,5 @@
 {
-  "name": "svelte-responsive-form",
+  "name": "@albinmedoc/svelte-form",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -18,18 +18,19 @@
   ],
   "files": [
     "src",
-    "dist"
+    "dist",
+    "index.d.ts"
   ],
   "version": "1.0.2",
   "dependencies": {},
   "author": "Albin Médoc",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/albinmedoc/svelte-responsive-form.git"
+    "url": "git+https://github.com/albinmedoc/svelte-form.git"
   },
   "bugs": {
-    "url": "https://github.com/albinmedoc/svelte-responsive-form/issues"
+    "url": "https://github.com/albinmedoc/svelte-form/issues"
   },
-  "homepage": "https://github.com/albinmedoc/svelte-responsive-form#readme"
+  "homepage": "https://github.com/albinmedoc/svelte-form#readme"
 }
