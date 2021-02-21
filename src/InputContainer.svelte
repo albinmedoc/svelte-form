@@ -17,6 +17,7 @@
     div :global(textarea),
     div :global(button) {
         height: 40px;
+        width: 100%;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box; 
