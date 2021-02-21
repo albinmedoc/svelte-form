@@ -8,7 +8,7 @@
         position: relative;
         flex-grow: 1;
         min-width: 200px;
-        margin: 12px 20px;
+        margin: 12px 0;
         width: calc(50% - 40px);
         /*  50% minus margin 20px on both sides */
     }
@@ -17,7 +17,9 @@
     div :global(textarea),
     div :global(button) {
         height: 40px;
-        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; 
         border: 1px solid #efefef;
         background-color: white;
         outline: none;
@@ -29,7 +31,7 @@
     div :global(input),
     div :global(textarea),
     div :global(label) {
-        padding: 0 10px;
+        padding: 0 0 0 10px;
     }
     div :global(textarea) {
         min-height: 100px;
